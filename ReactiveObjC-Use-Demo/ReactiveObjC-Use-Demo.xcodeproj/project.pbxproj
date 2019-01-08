@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183AF06F21DDA92B00B92310 /* CommonSceneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF06E21DDA92B00B92310 /* CommonSceneVC.m */; };
+		183AF07221DDA97500B92310 /* CSRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF07121DDA97500B92310 /* CSRedView.m */; };
+		183AF07621DDDA1D00B92310 /* DefineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF07521DDDA1D00B92310 /* DefineVC.m */; };
+		183AF07A21DDDE0400B92310 /* RACMulticastConnectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF07921DDDE0400B92310 /* RACMulticastConnectionVC.m */; };
+		183AF07E21DDE52A00B92310 /* RACCommandVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF07D21DDE52A00B92310 /* RACCommandVC.m */; };
+		183AF08121DE100900B92310 /* BindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF08021DE100900B92310 /* BindVC.m */; };
+		183AF08621DE12ED00B92310 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF08521DE12ED00B92310 /* MapVC.m */; };
+		183AF08A21DE143E00B92310 /* CombineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AF08921DE143E00B92310 /* CombineVC.m */; };
+		187883EC21DEFE0900D5C4FC /* FilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187883EB21DEFE0900D5C4FC /* FilterVC.m */; };
+		187883F021DF0D6C00D5C4FC /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187883EF21DF0D6C00D5C4FC /* LoginVC.m */; };
+		187883F621DF3C2B00D5C4FC /* LoginVCmvvm.m in Sources */ = {isa = PBXBuildFile; fileRef = 187883F521DF3C2B00D5C4FC /* LoginVCmvvm.m */; };
+		187883F921DF3D3700D5C4FC /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187883F821DF3D3700D5C4FC /* LoginViewModel.m */; };
+		187883FD21DF40C700D5C4FC /* NetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187883FC21DF40C700D5C4FC /* NetVC.m */; };
+		1878840021DF414000D5C4FC /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 187883FF21DF414000D5C4FC /* Book.m */; };
+		1878840321DF416400D5C4FC /* BookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878840221DF416400D5C4FC /* BookViewModel.m */; };
+		1878840721DF455A00D5C4FC /* NetVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878840621DF455A00D5C4FC /* NetVC1.m */; };
+		1878840A21DF45D400D5C4FC /* BookViewModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878840921DF45D400D5C4FC /* BookViewModel1.m */; };
+		1884A1F421DCB79900510CA4 /* RACDisposableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884A1F321DCB79900510CA4 /* RACDisposableVC.m */; };
+		1884A1F821DCBDBB00510CA4 /* RACSubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884A1F721DCBDBB00510CA4 /* RACSubjectVC.m */; };
+		1884A1FB21DCC03E00510CA4 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884A1FA21DCC03D00510CA4 /* CustomView.m */; };
+		1899A98721DCA25000C1416A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A98621DCA25000C1416A /* AppDelegate.m */; };
+		1899A98A21DCA25000C1416A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A98921DCA25000C1416A /* ViewController.m */; };
+		1899A98D21DCA25000C1416A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1899A98B21DCA25000C1416A /* Main.storyboard */; };
+		1899A99021DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1899A98E21DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodeld */; };
+		1899A99221DCA25300C1416A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1899A99121DCA25300C1416A /* Assets.xcassets */; };
+		1899A99521DCA25300C1416A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1899A99321DCA25300C1416A /* LaunchScreen.storyboard */; };
+		1899A99821DCA25300C1416A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A99721DCA25300C1416A /* main.m */; };
+		1899A9A221DCA25300C1416A /* ReactiveObjC_Use_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A9A121DCA25300C1416A /* ReactiveObjC_Use_DemoTests.m */; };
+		1899A9AD21DCA25300C1416A /* ReactiveObjC_Use_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A9AC21DCA25300C1416A /* ReactiveObjC_Use_DemoUITests.m */; };
+		1899A9BE21DCA50A00C1416A /* RACSignalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A9BD21DCA50A00C1416A /* RACSignalVC.m */; };
+		1899A9C621DCABC000C1416A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A9C521DCABC000C1416A /* BaseViewController.m */; };
+		18F6D91321DDA0D600D25C7E /* RACSequenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F6D91221DDA0D600D25C7E /* RACSequenceVC.m */; };
+		18F6D91721DDA17900D25C7E /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F6D91521DDA17900D25C7E /* flags.plist */; };
+		18F6D91821DDA17900D25C7E /* Flag.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F6D91621DDA17900D25C7E /* Flag.m */; };
+		416614B41F277453DC18DF11 /* libPods-ReactiveObjC-Use-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C4E2AB0B8C3704F794A12E /* libPods-ReactiveObjC-Use-Demo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1899A99E21DCA25300C1416A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1899A97A21DCA25000C1416A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1899A98121DCA25000C1416A;
+			remoteInfo = "ReactiveObjC-Use-Demo";
+		};
+		1899A9A921DCA25300C1416A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1899A97A21DCA25000C1416A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1899A98121DCA25000C1416A;
+			remoteInfo = "ReactiveObjC-Use-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C1A227B755D58A6540BC57F /* Pods-ReactiveObjC-Use-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjC-Use-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveObjC-Use-Demo/Pods-ReactiveObjC-Use-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		183AF06D21DDA92B00B92310 /* CommonSceneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonSceneVC.h; sourceTree = "<group>"; };
+		183AF06E21DDA92B00B92310 /* CommonSceneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonSceneVC.m; sourceTree = "<group>"; };
+		183AF07021DDA97500B92310 /* CSRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSRedView.h; sourceTree = "<group>"; };
+		183AF07121DDA97500B92310 /* CSRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSRedView.m; sourceTree = "<group>"; };
+		183AF07421DDDA1D00B92310 /* DefineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineVC.h; sourceTree = "<group>"; };
+		183AF07521DDDA1D00B92310 /* DefineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineVC.m; sourceTree = "<group>"; };
+		183AF07821DDDE0400B92310 /* RACMulticastConnectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACMulticastConnectionVC.h; sourceTree = "<group>"; };
+		183AF07921DDDE0400B92310 /* RACMulticastConnectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACMulticastConnectionVC.m; sourceTree = "<group>"; };
+		183AF07C21DDE52A00B92310 /* RACCommandVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACCommandVC.h; sourceTree = "<group>"; };
+		183AF07D21DDE52A00B92310 /* RACCommandVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACCommandVC.m; sourceTree = "<group>"; };
+		183AF07F21DE100900B92310 /* BindVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindVC.h; sourceTree = "<group>"; };
+		183AF08021DE100900B92310 /* BindVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindVC.m; sourceTree = "<group>"; };
+		183AF08421DE12ED00B92310 /* MapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		183AF08521DE12ED00B92310 /* MapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		183AF08821DE143E00B92310 /* CombineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineVC.h; sourceTree = "<group>"; };
+		183AF08921DE143E00B92310 /* CombineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineVC.m; sourceTree = "<group>"; };
+		187883EA21DEFE0900D5C4FC /* FilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterVC.h; sourceTree = "<group>"; };
+		187883EB21DEFE0900D5C4FC /* FilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterVC.m; sourceTree = "<group>"; };
+		187883EE21DF0D6C00D5C4FC /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		187883EF21DF0D6C00D5C4FC /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		187883F421DF3C2B00D5C4FC /* LoginVCmvvm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVCmvvm.h; sourceTree = "<group>"; };
+		187883F521DF3C2B00D5C4FC /* LoginVCmvvm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVCmvvm.m; sourceTree = "<group>"; };
+		187883F721DF3D3700D5C4FC /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		187883F821DF3D3700D5C4FC /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		187883FB21DF40C700D5C4FC /* NetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetVC.h; sourceTree = "<group>"; };
+		187883FC21DF40C700D5C4FC /* NetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetVC.m; sourceTree = "<group>"; };
+		187883FE21DF414000D5C4FC /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		187883FF21DF414000D5C4FC /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		1878840121DF416400D5C4FC /* BookViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookViewModel.h; sourceTree = "<group>"; };
+		1878840221DF416400D5C4FC /* BookViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookViewModel.m; sourceTree = "<group>"; };
+		1878840521DF455A00D5C4FC /* NetVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetVC1.h; sourceTree = "<group>"; };
+		1878840621DF455A00D5C4FC /* NetVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetVC1.m; sourceTree = "<group>"; };
+		1878840821DF45D400D5C4FC /* BookViewModel1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookViewModel1.h; sourceTree = "<group>"; };
+		1878840921DF45D400D5C4FC /* BookViewModel1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookViewModel1.m; sourceTree = "<group>"; };
+		1884A1F221DCB79900510CA4 /* RACDisposableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACDisposableVC.h; sourceTree = "<group>"; };
+		1884A1F321DCB79900510CA4 /* RACDisposableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDisposableVC.m; sourceTree = "<group>"; };
+		1884A1F621DCBDBB00510CA4 /* RACSubjectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSubjectVC.h; sourceTree = "<group>"; };
+		1884A1F721DCBDBB00510CA4 /* RACSubjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSubjectVC.m; sourceTree = "<group>"; };
+		1884A1F921DCC03D00510CA4 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		1884A1FA21DCC03D00510CA4 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		1899A98221DCA25000C1416A /* ReactiveObjC-Use-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveObjC-Use-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1899A98521DCA25000C1416A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1899A98621DCA25000C1416A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1899A98821DCA25000C1416A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1899A98921DCA25000C1416A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1899A98C21DCA25000C1416A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1899A98F21DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReactiveObjC_Use_Demo.xcdatamodel; sourceTree = "<group>"; };
+		1899A99121DCA25300C1416A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1899A99421DCA25300C1416A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1899A99621DCA25300C1416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1899A99721DCA25300C1416A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1899A99D21DCA25300C1416A /* ReactiveObjC-Use-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveObjC-Use-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1899A9A121DCA25300C1416A /* ReactiveObjC_Use_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveObjC_Use_DemoTests.m; sourceTree = "<group>"; };
+		1899A9A321DCA25300C1416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1899A9A821DCA25300C1416A /* ReactiveObjC-Use-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveObjC-Use-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1899A9AC21DCA25300C1416A /* ReactiveObjC_Use_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveObjC_Use_DemoUITests.m; sourceTree = "<group>"; };
+		1899A9AE21DCA25300C1416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1899A9BC21DCA50A00C1416A /* RACSignalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSignalVC.h; sourceTree = "<group>"; };
+		1899A9BD21DCA50A00C1416A /* RACSignalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSignalVC.m; sourceTree = "<group>"; };
+		1899A9C421DCABC000C1416A /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1899A9C521DCABC000C1416A /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		18F6D91121DDA0D600D25C7E /* RACSequenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSequenceVC.h; sourceTree = "<group>"; };
+		18F6D91221DDA0D600D25C7E /* RACSequenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSequenceVC.m; sourceTree = "<group>"; };
+		18F6D91421DDA17900D25C7E /* Flag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flag.h; sourceTree = "<group>"; };
+		18F6D91521DDA17900D25C7E /* flags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
+		18F6D91621DDA17900D25C7E /* Flag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flag.m; sourceTree = "<group>"; };
+		76CA298E0D8A6D1488C417F8 /* Pods-ReactiveObjC-Use-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjC-Use-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveObjC-Use-Demo/Pods-ReactiveObjC-Use-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		95C4E2AB0B8C3704F794A12E /* libPods-ReactiveObjC-Use-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveObjC-Use-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1899A97F21DCA25000C1416A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416614B41F277453DC18DF11 /* libPods-ReactiveObjC-Use-Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1899A99A21DCA25300C1416A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1899A9A521DCA25300C1416A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12127724472F715E468B524D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C4E2AB0B8C3704F794A12E /* libPods-ReactiveObjC-Use-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		183AF06C21DDA8EA00B92310 /* CommonScene */ = {
+			isa = PBXGroup;
+			children = (
+				183AF06D21DDA92B00B92310 /* CommonSceneVC.h */,
+				183AF06E21DDA92B00B92310 /* CommonSceneVC.m */,
+				183AF07021DDA97500B92310 /* CSRedView.h */,
+				183AF07121DDA97500B92310 /* CSRedView.m */,
+			);
+			path = CommonScene;
+			sourceTree = "<group>";
+		};
+		183AF07321DDD9FD00B92310 /* DefineVC */ = {
+			isa = PBXGroup;
+			children = (
+				183AF07421DDDA1D00B92310 /* DefineVC.h */,
+				183AF07521DDDA1D00B92310 /* DefineVC.m */,
+			);
+			path = DefineVC;
+			sourceTree = "<group>";
+		};
+		183AF07721DDDDF300B92310 /* RACMulticastConnection */ = {
+			isa = PBXGroup;
+			children = (
+				183AF07821DDDE0400B92310 /* RACMulticastConnectionVC.h */,
+				183AF07921DDDE0400B92310 /* RACMulticastConnectionVC.m */,
+			);
+			path = RACMulticastConnection;
+			sourceTree = "<group>";
+		};
+		183AF07B21DDE51A00B92310 /* RACCommand */ = {
+			isa = PBXGroup;
+			children = (
+				183AF07C21DDE52A00B92310 /* RACCommandVC.h */,
+				183AF07D21DDE52A00B92310 /* RACCommandVC.m */,
+			);
+			path = RACCommand;
+			sourceTree = "<group>";
+		};
+		183AF08221DE103A00B92310 /* BindVC */ = {
+			isa = PBXGroup;
+			children = (
+				183AF07F21DE100900B92310 /* BindVC.h */,
+				183AF08021DE100900B92310 /* BindVC.m */,
+			);
+			path = BindVC;
+			sourceTree = "<group>";
+		};
+		183AF08321DE12D600B92310 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				183AF08421DE12ED00B92310 /* MapVC.h */,
+				183AF08521DE12ED00B92310 /* MapVC.m */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		183AF08721DE142700B92310 /* CombineVC */ = {
+			isa = PBXGroup;
+			children = (
+				183AF08821DE143E00B92310 /* CombineVC.h */,
+				183AF08921DE143E00B92310 /* CombineVC.m */,
+			);
+			path = CombineVC;
+			sourceTree = "<group>";
+		};
+		187883E921DEFDE400D5C4FC /* FilterVC */ = {
+			isa = PBXGroup;
+			children = (
+				187883EA21DEFE0900D5C4FC /* FilterVC.h */,
+				187883EB21DEFE0900D5C4FC /* FilterVC.m */,
+			);
+			path = FilterVC;
+			sourceTree = "<group>";
+		};
+		187883ED21DF0D4A00D5C4FC /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				187883EE21DF0D6C00D5C4FC /* LoginVC.h */,
+				187883EF21DF0D6C00D5C4FC /* LoginVC.m */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		187883F321DF3C0400D5C4FC /* LoginVCmvvm */ = {
+			isa = PBXGroup;
+			children = (
+				187883F421DF3C2B00D5C4FC /* LoginVCmvvm.h */,
+				187883F521DF3C2B00D5C4FC /* LoginVCmvvm.m */,
+				187883F721DF3D3700D5C4FC /* LoginViewModel.h */,
+				187883F821DF3D3700D5C4FC /* LoginViewModel.m */,
+			);
+			path = LoginVCmvvm;
+			sourceTree = "<group>";
+		};
+		187883FA21DF40B100D5C4FC /* NetVC */ = {
+			isa = PBXGroup;
+			children = (
+				187883FB21DF40C700D5C4FC /* NetVC.h */,
+				187883FC21DF40C700D5C4FC /* NetVC.m */,
+				187883FE21DF414000D5C4FC /* Book.h */,
+				187883FF21DF414000D5C4FC /* Book.m */,
+				1878840121DF416400D5C4FC /* BookViewModel.h */,
+				1878840221DF416400D5C4FC /* BookViewModel.m */,
+			);
+			path = NetVC;
+			sourceTree = "<group>";
+		};
+		1878840421DF454000D5C4FC /* NetVC1 */ = {
+			isa = PBXGroup;
+			children = (
+				1878840521DF455A00D5C4FC /* NetVC1.h */,
+				1878840621DF455A00D5C4FC /* NetVC1.m */,
+				1878840821DF45D400D5C4FC /* BookViewModel1.h */,
+				1878840921DF45D400D5C4FC /* BookViewModel1.m */,
+			);
+			path = NetVC1;
+			sourceTree = "<group>";
+		};
+		1884A1F121DCB77000510CA4 /* RACDisposable */ = {
+			isa = PBXGroup;
+			children = (
+				1884A1F221DCB79900510CA4 /* RACDisposableVC.h */,
+				1884A1F321DCB79900510CA4 /* RACDisposableVC.m */,
+			);
+			path = RACDisposable;
+			sourceTree = "<group>";
+		};
+		1884A1F521DCBDA200510CA4 /* RACSubject&RACReplaySubject */ = {
+			isa = PBXGroup;
+			children = (
+				1884A1F621DCBDBB00510CA4 /* RACSubjectVC.h */,
+				1884A1F721DCBDBB00510CA4 /* RACSubjectVC.m */,
+				1884A1F921DCC03D00510CA4 /* CustomView.h */,
+				1884A1FA21DCC03D00510CA4 /* CustomView.m */,
+			);
+			path = "RACSubject&RACReplaySubject";
+			sourceTree = "<group>";
+		};
+		1899A97921DCA25000C1416A = {
+			isa = PBXGroup;
+			children = (
+				1899A98421DCA25000C1416A /* ReactiveObjC-Use-Demo */,
+				1899A9A021DCA25300C1416A /* ReactiveObjC-Use-DemoTests */,
+				1899A9AB21DCA25300C1416A /* ReactiveObjC-Use-DemoUITests */,
+				1899A98321DCA25000C1416A /* Products */,
+				DD9E387DE2F2ACB257C43B75 /* Pods */,
+				12127724472F715E468B524D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1899A98321DCA25000C1416A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1899A98221DCA25000C1416A /* ReactiveObjC-Use-Demo.app */,
+				1899A99D21DCA25300C1416A /* ReactiveObjC-Use-DemoTests.xctest */,
+				1899A9A821DCA25300C1416A /* ReactiveObjC-Use-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1899A98421DCA25000C1416A /* ReactiveObjC-Use-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1899A9BA21DCA46700C1416A /* classes */,
+				1899A98521DCA25000C1416A /* AppDelegate.h */,
+				1899A98621DCA25000C1416A /* AppDelegate.m */,
+				1899A98821DCA25000C1416A /* ViewController.h */,
+				1899A98921DCA25000C1416A /* ViewController.m */,
+				1899A98B21DCA25000C1416A /* Main.storyboard */,
+				1899A99121DCA25300C1416A /* Assets.xcassets */,
+				1899A99321DCA25300C1416A /* LaunchScreen.storyboard */,
+				1899A99621DCA25300C1416A /* Info.plist */,
+				1899A99721DCA25300C1416A /* main.m */,
+				1899A98E21DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodeld */,
+			);
+			path = "ReactiveObjC-Use-Demo";
+			sourceTree = "<group>";
+		};
+		1899A9A021DCA25300C1416A /* ReactiveObjC-Use-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1899A9A121DCA25300C1416A /* ReactiveObjC_Use_DemoTests.m */,
+				1899A9A321DCA25300C1416A /* Info.plist */,
+			);
+			path = "ReactiveObjC-Use-DemoTests";
+			sourceTree = "<group>";
+		};
+		1899A9AB21DCA25300C1416A /* ReactiveObjC-Use-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1899A9AC21DCA25300C1416A /* ReactiveObjC_Use_DemoUITests.m */,
+				1899A9AE21DCA25300C1416A /* Info.plist */,
+			);
+			path = "ReactiveObjC-Use-DemoUITests";
+			sourceTree = "<group>";
+		};
+		1899A9BA21DCA46700C1416A /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				1878840421DF454000D5C4FC /* NetVC1 */,
+				187883FA21DF40B100D5C4FC /* NetVC */,
+				187883F321DF3C0400D5C4FC /* LoginVCmvvm */,
+				187883ED21DF0D4A00D5C4FC /* LoginVC */,
+				187883E921DEFDE400D5C4FC /* FilterVC */,
+				183AF08721DE142700B92310 /* CombineVC */,
+				183AF08321DE12D600B92310 /* MapVC */,
+				183AF08221DE103A00B92310 /* BindVC */,
+				183AF07B21DDE51A00B92310 /* RACCommand */,
+				183AF07721DDDDF300B92310 /* RACMulticastConnection */,
+				183AF07321DDD9FD00B92310 /* DefineVC */,
+				183AF06C21DDA8EA00B92310 /* CommonScene */,
+				18F6D91021DD9F8900D25C7E /* RACTuple&RACSequence& RACTupleUnpack */,
+				1884A1F521DCBDA200510CA4 /* RACSubject&RACReplaySubject */,
+				1884A1F121DCB77000510CA4 /* RACDisposable */,
+				1899A9C321DCABA500C1416A /* baseVC */,
+				1899A9BB21DCA4E200C1416A /* RACSignal */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		1899A9BB21DCA4E200C1416A /* RACSignal */ = {
+			isa = PBXGroup;
+			children = (
+				1899A9BC21DCA50A00C1416A /* RACSignalVC.h */,
+				1899A9BD21DCA50A00C1416A /* RACSignalVC.m */,
+			);
+			path = RACSignal;
+			sourceTree = "<group>";
+		};
+		1899A9C321DCABA500C1416A /* baseVC */ = {
+			isa = PBXGroup;
+			children = (
+				1899A9C421DCABC000C1416A /* BaseViewController.h */,
+				1899A9C521DCABC000C1416A /* BaseViewController.m */,
+			);
+			path = baseVC;
+			sourceTree = "<group>";
+		};
+		18F6D91021DD9F8900D25C7E /* RACTuple&RACSequence& RACTupleUnpack */ = {
+			isa = PBXGroup;
+			children = (
+				18F6D91121DDA0D600D25C7E /* RACSequenceVC.h */,
+				18F6D91221DDA0D600D25C7E /* RACSequenceVC.m */,
+				18F6D91421DDA17900D25C7E /* Flag.h */,
+				18F6D91621DDA17900D25C7E /* Flag.m */,
+				18F6D91521DDA17900D25C7E /* flags.plist */,
+			);
+			path = "RACTuple&RACSequence& RACTupleUnpack";
+			sourceTree = "<group>";
+		};
+		DD9E387DE2F2ACB257C43B75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76CA298E0D8A6D1488C417F8 /* Pods-ReactiveObjC-Use-Demo.debug.xcconfig */,
+				0C1A227B755D58A6540BC57F /* Pods-ReactiveObjC-Use-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1899A98121DCA25000C1416A /* ReactiveObjC-Use-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1899A9B121DCA25300C1416A /* Build configuration list for PBXNativeTarget "ReactiveObjC-Use-Demo" */;
+			buildPhases = (
+				8804513481B73F7C1CBD525F /* [CP] Check Pods Manifest.lock */,
+				1899A97E21DCA25000C1416A /* Sources */,
+				1899A97F21DCA25000C1416A /* Frameworks */,
+				1899A98021DCA25000C1416A /* Resources */,
+				C03090A2F286A915F03496CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReactiveObjC-Use-Demo";
+			productName = "ReactiveObjC-Use-Demo";
+			productReference = 1899A98221DCA25000C1416A /* ReactiveObjC-Use-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1899A99C21DCA25300C1416A /* ReactiveObjC-Use-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1899A9B421DCA25300C1416A /* Build configuration list for PBXNativeTarget "ReactiveObjC-Use-DemoTests" */;
+			buildPhases = (
+				1899A99921DCA25300C1416A /* Sources */,
+				1899A99A21DCA25300C1416A /* Frameworks */,
+				1899A99B21DCA25300C1416A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1899A99F21DCA25300C1416A /* PBXTargetDependency */,
+			);
+			name = "ReactiveObjC-Use-DemoTests";
+			productName = "ReactiveObjC-Use-DemoTests";
+			productReference = 1899A99D21DCA25300C1416A /* ReactiveObjC-Use-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1899A9A721DCA25300C1416A /* ReactiveObjC-Use-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1899A9B721DCA25300C1416A /* Build configuration list for PBXNativeTarget "ReactiveObjC-Use-DemoUITests" */;
+			buildPhases = (
+				1899A9A421DCA25300C1416A /* Sources */,
+				1899A9A521DCA25300C1416A /* Frameworks */,
+				1899A9A621DCA25300C1416A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1899A9AA21DCA25300C1416A /* PBXTargetDependency */,
+			);
+			name = "ReactiveObjC-Use-DemoUITests";
+			productName = "ReactiveObjC-Use-DemoUITests";
+			productReference = 1899A9A821DCA25300C1416A /* ReactiveObjC-Use-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1899A97A21DCA25000C1416A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					1899A98121DCA25000C1416A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1899A99C21DCA25300C1416A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1899A98121DCA25000C1416A;
+					};
+					1899A9A721DCA25300C1416A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1899A98121DCA25000C1416A;
+					};
+				};
+			};
+			buildConfigurationList = 1899A97D21DCA25000C1416A /* Build configuration list for PBXProject "ReactiveObjC-Use-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1899A97921DCA25000C1416A;
+			productRefGroup = 1899A98321DCA25000C1416A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1899A98121DCA25000C1416A /* ReactiveObjC-Use-Demo */,
+				1899A99C21DCA25300C1416A /* ReactiveObjC-Use-DemoTests */,
+				1899A9A721DCA25300C1416A /* ReactiveObjC-Use-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1899A98021DCA25000C1416A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1899A99521DCA25300C1416A /* LaunchScreen.storyboard in Resources */,
+				1899A99221DCA25300C1416A /* Assets.xcassets in Resources */,
+				18F6D91721DDA17900D25C7E /* flags.plist in Resources */,
+				1899A98D21DCA25000C1416A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1899A99B21DCA25300C1416A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1899A9A621DCA25300C1416A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8804513481B73F7C1CBD525F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveObjC-Use-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03090A2F286A915F03496CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveObjC-Use-Demo/Pods-ReactiveObjC-Use-Demo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveObjC-Use-Demo/Pods-ReactiveObjC-Use-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1899A97E21DCA25000C1416A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1878840021DF414000D5C4FC /* Book.m in Sources */,
+				187883EC21DEFE0900D5C4FC /* FilterVC.m in Sources */,
+				187883F921DF3D3700D5C4FC /* LoginViewModel.m in Sources */,
+				1884A1F821DCBDBB00510CA4 /* RACSubjectVC.m in Sources */,
+				187883F621DF3C2B00D5C4FC /* LoginVCmvvm.m in Sources */,
+				18F6D91821DDA17900D25C7E /* Flag.m in Sources */,
+				1899A98A21DCA25000C1416A /* ViewController.m in Sources */,
+				1878840321DF416400D5C4FC /* BookViewModel.m in Sources */,
+				183AF08621DE12ED00B92310 /* MapVC.m in Sources */,
+				187883F021DF0D6C00D5C4FC /* LoginVC.m in Sources */,
+				1884A1F421DCB79900510CA4 /* RACDisposableVC.m in Sources */,
+				183AF07221DDA97500B92310 /* CSRedView.m in Sources */,
+				183AF07621DDDA1D00B92310 /* DefineVC.m in Sources */,
+				183AF08A21DE143E00B92310 /* CombineVC.m in Sources */,
+				1899A9C621DCABC000C1416A /* BaseViewController.m in Sources */,
+				183AF07E21DDE52A00B92310 /* RACCommandVC.m in Sources */,
+				183AF08121DE100900B92310 /* BindVC.m in Sources */,
+				1899A9BE21DCA50A00C1416A /* RACSignalVC.m in Sources */,
+				183AF06F21DDA92B00B92310 /* CommonSceneVC.m in Sources */,
+				1878840A21DF45D400D5C4FC /* BookViewModel1.m in Sources */,
+				1884A1FB21DCC03E00510CA4 /* CustomView.m in Sources */,
+				187883FD21DF40C700D5C4FC /* NetVC.m in Sources */,
+				1899A98721DCA25000C1416A /* AppDelegate.m in Sources */,
+				1899A99821DCA25300C1416A /* main.m in Sources */,
+				18F6D91321DDA0D600D25C7E /* RACSequenceVC.m in Sources */,
+				1899A99021DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodeld in Sources */,
+				183AF07A21DDDE0400B92310 /* RACMulticastConnectionVC.m in Sources */,
+				1878840721DF455A00D5C4FC /* NetVC1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1899A99921DCA25300C1416A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1899A9A221DCA25300C1416A /* ReactiveObjC_Use_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1899A9A421DCA25300C1416A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1899A9AD21DCA25300C1416A /* ReactiveObjC_Use_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1899A99F21DCA25300C1416A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1899A98121DCA25000C1416A /* ReactiveObjC-Use-Demo */;
+			targetProxy = 1899A99E21DCA25300C1416A /* PBXContainerItemProxy */;
+		};
+		1899A9AA21DCA25300C1416A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1899A98121DCA25000C1416A /* ReactiveObjC-Use-Demo */;
+			targetProxy = 1899A9A921DCA25300C1416A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1899A98B21DCA25000C1416A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1899A98C21DCA25000C1416A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1899A99321DCA25300C1416A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1899A99421DCA25300C1416A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1899A9AF21DCA25300C1416A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1899A9B021DCA25300C1416A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1899A9B221DCA25300C1416A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CA298E0D8A6D1488C417F8 /* Pods-ReactiveObjC-Use-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 474M28Y9TK;
+				INFOPLIST_FILE = "ReactiveObjC-Use-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openfood.rider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1899A9B321DCA25300C1416A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1A227B755D58A6540BC57F /* Pods-ReactiveObjC-Use-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 474M28Y9TK;
+				INFOPLIST_FILE = "ReactiveObjC-Use-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openfood.rider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1899A9B521DCA25300C1416A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReactiveObjC-Use-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.mt.com.ReactiveObjC-Use-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveObjC-Use-Demo.app/ReactiveObjC-Use-Demo";
+			};
+			name = Debug;
+		};
+		1899A9B621DCA25300C1416A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReactiveObjC-Use-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.mt.com.ReactiveObjC-Use-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveObjC-Use-Demo.app/ReactiveObjC-Use-Demo";
+			};
+			name = Release;
+		};
+		1899A9B821DCA25300C1416A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReactiveObjC-Use-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.mt.com.ReactiveObjC-Use-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReactiveObjC-Use-Demo";
+			};
+			name = Debug;
+		};
+		1899A9B921DCA25300C1416A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReactiveObjC-Use-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.mt.com.ReactiveObjC-Use-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReactiveObjC-Use-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1899A97D21DCA25000C1416A /* Build configuration list for PBXProject "ReactiveObjC-Use-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1899A9AF21DCA25300C1416A /* Debug */,
+				1899A9B021DCA25300C1416A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1899A9B121DCA25300C1416A /* Build configuration list for PBXNativeTarget "ReactiveObjC-Use-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1899A9B221DCA25300C1416A /* Debug */,
+				1899A9B321DCA25300C1416A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1899A9B421DCA25300C1416A /* Build configuration list for PBXNativeTarget "ReactiveObjC-Use-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1899A9B521DCA25300C1416A /* Debug */,
+				1899A9B621DCA25300C1416A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1899A9B721DCA25300C1416A /* Build configuration list for PBXNativeTarget "ReactiveObjC-Use-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1899A9B821DCA25300C1416A /* Debug */,
+				1899A9B921DCA25300C1416A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1899A98E21DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1899A98F21DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodel */,
+			);
+			currentVersion = 1899A98F21DCA25000C1416A /* ReactiveObjC_Use_Demo.xcdatamodel */;
+			path = ReactiveObjC_Use_Demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1899A97A21DCA25000C1416A /* Project object */;
+}
