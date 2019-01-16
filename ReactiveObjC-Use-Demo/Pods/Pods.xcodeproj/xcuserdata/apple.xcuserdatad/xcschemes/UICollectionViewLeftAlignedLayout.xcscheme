@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F51428116E83573BEA1769F61D7AEC1C"
+               BlueprintIdentifier = "E0EEE6BB0D4BF697B45BA2276481A39A"
                BlueprintName = "UICollectionViewLeftAlignedLayout"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libUICollectionViewLeftAlignedLayout.a">

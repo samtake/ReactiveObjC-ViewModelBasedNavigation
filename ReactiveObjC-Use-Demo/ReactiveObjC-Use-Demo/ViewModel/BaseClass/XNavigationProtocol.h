@@ -11,7 +11,7 @@
 #import "XViewModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XNavigationProtocol <NSObject>
+@protocol XNavigationProtocol <NSObject>
 /// Pushes the corresponding view controller.
 ///
 /// Uses a horizontal slide transition.

@@ -81,4 +81,75 @@
 #define XRandomColor XColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 // 根据rgbValue获取对应的颜色
 
+// AppCaches 文件夹路径
+#define XCachesDirectory [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+// App DocumentDirectory 文件夹路径
+#define XDocumentDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) lastObject]
+
+// 系统放大倍数
+#define XScale [[UIScreen mainScreen] scale]
+
+// 设置图片
+#define XImageNamed(__imageName) [UIImage imageNamed:__imageName]
+
+/// 根据hex 获取颜色
+#define XColorFromHexString(__hexString__) ([UIColor colorFromHexString:__hexString__])
+
+//  通知中心
+#define XNotificationCenter [NSNotificationCenter defaultCenter]
+
+
+/// 全局细下滑线颜色 以及分割线颜色
+#define XGlobalBottomLineColor     [UIColor colorFromHexString:@"#D9D9D9"]
+
+// 是否为空对象
+#define XObjectIsNil(__object)  ((nil == __object) || [__object isKindOfClass:[NSNull class]])
+
+// 字符串为空
+#define XStringIsEmpty(__string) ((__string.length == 0) || XObjectIsNil(__string))
+
+// 字符串不为空
+#define XStringIsNotEmpty(__string)  (!XStringIsEmpty(__string))
+
+// 数组为空
+#define XArrayIsEmpty(__array) ((MHObjectIsNil(__array)) || (__array.count==0))
+
+
+
+//// --------------------  下面是公共配置  --------------------
+
+/// 微信项目重要数据备份的文件夹名称（Documents/WeChatDoc）利用NSFileManager来访问
+#define X_WECHAT_DOC_NAME  @"WeChatDoc"
+
+/// 微信项目轻量数据数据备份的文件夹（Library/Caches/WeChatCache）利用NSFileManager来访问
+#define X_WECHAT_CACHE_NAME  @"WeChatCache"
+
+/// AppDelegate
+#define XSharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+////  整个应用的主题配置（颜色+字体）MAIN 代表全局都可以修改 使用前须知
+#define X_MAIN_NAVIGATIONBAR_BACKGROUNDCOLOR_1 [UIColor colorWithRed:.1 green:.1 blue:.1 alpha:0.65]
+#define X_MAIN_NAVIGATIONBAR_BACKGROUNDCOLOR_2 [UIColor colorFromHexString:@"#EFEFF4"]
+#define X_MAIN_NAVIGATIONBAR_BACKGROUNDCOLOR_3 [UIColor colorFromHexString:@"#F3F3F3"]
+#define X_MAIN_NAVIGATIONBAR_BACKGROUNDCOLOR_4 [UIColor colorFromHexString:@"#E6A863"]
+/// 全局青色 tintColor
+#define X_MAIN_TINTCOLOR [UIColor colorWithRed:(10 / 255.0) green:(193 / 255.0) blue:(42 / 255.0) alpha:1]
+
+/// 整个应用的视图的背景色 BackgroundColor
+#define X_MAIN_BACKGROUNDCOLOR [UIColor colorFromHexString:@"#EFEFF4"]
+/// 整个应用的分割线颜色
+#define X_MAIN_LINE_COLOR_1 [UIColor colorFromHexString:@"#D9D8D9"]
+
+/// 文字颜色
+/// #56585f
+#define X_MAIN_TEXT_COLOR_1 [UIColor colorFromHexString:@"#B2B2B2"]
+/// #9CA1B2
+#define X_MAIN_TEXT_COLOR_2 [UIColor colorFromHexString:@"#20DB1F"]
+/// #FE583E
+#define X_MAIN_TEXT_COLOR_3 [UIColor colorFromHexString:@"#FE583E"]
+/// #0ECCCA
+#define X_MAIN_TEXT_COLOR_4 [UIColor colorFromHexString:@"#0ECCCA"]
+/// #3C3E44
+#define X_MAIN_TEXT_COLOR_5 [UIColor colorFromHexString:@"#3C3E44"]
+
 #endif /* SamMascros_h */

@@ -203,7 +203,7 @@ static id service_ = nil;
 /// 用户信息配置完成
 - (void)postUserDataConfigureCompleteNotification{
     MHUser *user = [self currentUser];
-    [MHNotificationCenter postNotificationName:MHUserDataConfigureCompleteNotification object:nil userInfo:@{MHUserDataConfigureCompleteUserInfoKey:user}];
+    [XNotificationCenter postNotificationName:MHUserDataConfigureCompleteNotification object:nil userInfo:@{MHUserDataConfigureCompleteUserInfoKey:user}];
 }
 
 
@@ -307,7 +307,7 @@ static id service_ = nil;
                         userInfo[MHHTTPServiceErrorResponseCodeKey] = @(statusCode);
                         NSString *msgTips = responseObject[MHHTTPServiceResponseMsgKey];
 #if defined(DEBUG)||defined(_DEBUG)
-                        msgTips = MHStringIsNotEmpty(msgTips)?[NSString stringWithFormat:@"%@(%zd)",msgTips,statusCode]:[NSString stringWithFormat:@"服务器出错了，请稍后重试(%zd)~",statusCode];                 /// 调试模式
+                        msgTips = XStringIsNotEmpty(msgTips)?[NSString stringWithFormat:@"%@(%zd)",msgTips,statusCode]:[NSString stringWithFormat:@"服务器出错了，请稍后重试(%zd)~",statusCode];                 /// 调试模式      
 #else
                         msgTips = MHStringIsNotEmpty(msgTips)?msgTips:@"服务器出错了，请稍后重试~";/// 发布模式
 #endif
@@ -344,7 +344,7 @@ static id service_ = nil;
     /// request 必须的有值
     if (!request) return [RACSignal error:[NSError errorWithDomain:MHHTTPServiceErrorDomain code:-1 userInfo:nil]];
     /// 断言
-    NSAssert(MHStringIsNotEmpty(name), @"name is empty: %@", name);
+    NSAssert(XStringIsNotEmpty(name), @"name is empty: %@", name);
     
     @weakify(self);
     
@@ -376,7 +376,7 @@ static id service_ = nil;
             [formatter setDateFormat:@"yyyyMMddHHmmss"];
             NSString *dateString = [formatter stringFromDate:[NSDate date]];
             NSString *fileName = [NSString  stringWithFormat:@"senba_empty_%@_%zd.jpg", dateString , i];
-            [formData appendPartWithFileData:fileData name:name fileName:fileName mimeType:MHStringIsNotEmpty(mimeType)?mimeType:@"application/octet-stream"];
+            [formData appendPartWithFileData:fileData name:name fileName:fileName mimeType:XStringIsNotEmpty(mimeType)?mimeType:@"application/octet-stream"];
         }
     }]
              reduceEach:^RACStream *(NSURLResponse *response, NSDictionary * responseObject){
@@ -462,7 +462,7 @@ static id service_ = nil;
                         userInfo[MHHTTPServiceErrorResponseCodeKey] = @(statusCode);
                         NSString *msgTips = responseObject[MHHTTPServiceResponseMsgKey];
 #if defined(DEBUG)||defined(_DEBUG)
-                        msgTips = MHStringIsNotEmpty(msgTips)?[NSString stringWithFormat:@"%@(%zd)",msgTips,statusCode]:[NSString stringWithFormat:@"服务器出错了，请稍后重试(%zd)~",statusCode];                 /// 调试模式
+                        msgTips = XStringIsNotEmpty(msgTips)?[NSString stringWithFormat:@"%@(%zd)",msgTips,statusCode]:[NSString stringWithFormat:@"服务器出错了，请稍后重试(%zd)~",statusCode];                 /// 调试模式
 #else
                         msgTips = MHStringIsNotEmpty(msgTips)?msgTips:@"服务器出错了，请稍后重试~";  /// 发布模式
 #endif
@@ -740,9 +740,9 @@ static id service_ = nil;
     NSMutableArray *kvs = [NSMutableArray array];
     for (id key in sortedKeys) {
         /// value 为 empty 跳过
-        if(MHObjectIsNil(parameters[key])) continue;
+        if(XObjectIsNil(parameters[key])) continue;
         NSString * value = [parameters[key] mh_stringValueExtension];
-        if (MHObjectIsNil(value)||!MHStringIsNotEmpty(value)) continue;
+        if (XObjectIsNil(value)||!XStringIsNotEmpty(value)) continue;
         value = [value sb_removeBothEndsWhitespaceAndNewline];
         value = [value sb_URLEncoding];
         [kvs addObject:[NSString stringWithFormat:@"%@=%@",key,value]];

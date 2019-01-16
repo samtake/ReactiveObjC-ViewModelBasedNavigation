@@ -153,7 +153,7 @@
         /// 2.判断要被Push的控制器（B）是否是 MHViewController ，
         if ([viewController isKindOfClass:[XViewController class]]) {
             
-            MHViewModel *viewModel = [(MHViewController *)viewController viewModel];
+            XViewModel *viewModel = [(XViewController *)viewController viewModel];
             
             /// 3. 查看backTitle 是否有值
             title = viewModel.backTitle?:title;
