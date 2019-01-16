@@ -38,10 +38,10 @@
 }
 
 
-+ (UINavigationController *)topNavigationController{
-    return [UIApplication sharedApplication].delegate.navigationControllerStack.topNavigationController;
-    //return XSharedAppDelegate.navigationControllerStack.topNavigationController;
-}
+//+ (UINavigationController *)topNavigationController{
+////    return [UIApplication sharedApplication].delegate.navigationControllerStack.topNavigationController;
+//    return XSharedAppDelegate.navigationControllerStack.topNavigationController;
+//}
 
 + (XViewController *)topViewController
 {
